@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>VN Job Listing – Việc làm Hà Nội, Quảng Ninh, Hải Phòng</title>
+<meta name="description" content="Việc làm được cập nhật thường xuyên ở Hà Nội, Quảng Ninh, Hải Phòng. Xem JD và ứng tuyển trực tuyến.">
+<meta property="og:title" content="VN Job Listing">
+<meta property="og:description" content="Việc làm được cập nhật thường xuyên ở Hà Nội, Quảng Ninh, Hải Phòng.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style id="css">
+/* Layout: thanh điều hướng + dải tìm kiếm màu biển; trang chủ (ngành nghề, việc nổi bật, nhà tuyển dụng), trang kết quả có bộ lọc bên trái, trang chi tiết 2 cột, trang nhà tuyển dụng để đăng tin */
+:root{
+  --bg:#f2f5f5; --surface:#ffffff; --fg:#13262a; --muted:#5b6e72; --line:#d9e2e2;
+  --accent:#0b6b6b; --accent-2:#0a5555; --accent-ink:#ffffff; --accent-soft:#dcefed; --warm:#c45f1c; --warm-soft:#fbeadc;
+  --display:"Lexend",system-ui,sans-serif; --body:"Be Vietnam Pro",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e191a; --surface:#152325; --fg:#e3eded; --muted:#99adaf; --line:#253839;
+  --accent:#49bfb4; --accent-2:#0f3b3a; --accent-ink:#04201d; --accent-soft:#163836; --warm:#f2a35f; --warm-soft:#3a2615; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e191a; --surface:#152325; --fg:#e3eded; --muted:#99adaf; --line:#253839;
+  --accent:#49bfb4; --accent-2:#0f3b3a; --accent-ink:#04201d; --accent-soft:#163836; --warm:#f2a35f; --warm-soft:#3a2615; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--warm);outline-offset:2px}
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:18px;padding-block:10px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:700;font-size:21px;text-decoration:none;display:flex;align-items:center;gap:8px}
+.brand i{display:inline-grid;place-items:center;width:34px;height:30px;border-radius:7px;background:var(--accent);color:var(--accent-ink);font-style:normal;font-size:15px}
+.nav nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.nav nav a{text-decoration:none;padding:6px 12px;border-radius:6px;font-weight:500;font-size:14.5px;color:var(--muted)}
+.nav nav a[aria-current="page"]{color:var(--accent);background:var(--accent-soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:8px;padding:9px 16px;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.warm{background:var(--warm);color:#fff}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line)}
+.btn.danger{background:transparent;color:#c0392b;border:1px solid var(--line)}
+.btn[disabled]{opacity:.55;cursor:default}
+/* hero */
+.hero{background:var(--accent-2);color:#fff}
+:root:not([data-theme="dark"]) .hero{background:var(--accent-2)}
+.hero .wrap{padding-block:40px 44px;display:grid;gap:14px}
+.hero h1{font-family:var(--display);font-size:clamp(26px,5vw,40px);line-height:1.15;margin:0;text-wrap:balance;color:#fff}
+.hero p{margin:0;color:#cfe6e4;max-width:60ch}
+.search{display:grid;grid-template-columns:1fr 220px auto;gap:8px;background:var(--surface);padding:8px;border-radius:12px;margin-top:6px}
+.search input,.search select{border:0;background:transparent;padding:10px 12px;min-width:0;color:var(--fg)}
+.search select{border-left:1px solid var(--line)}
+.search .btn{padding-inline:22px}
+.stats{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:#cfe6e4}
+.stats b{color:#fff;font-family:var(--display);font-size:18px;margin-right:4px;font-variant-numeric:tabular-nums}
+/* sections */
+main{min-height:60vh}
+.section{padding-block:30px;display:grid;gap:16px}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+h2{font-family:var(--display);font-size:22px;margin:0;line-height:1.25}
+.link{color:var(--accent);font-weight:600;text-decoration:none;font-size:14px;background:none;border:0;cursor:pointer;padding:0}
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.cat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;text-align:left;cursor:pointer;display:grid;gap:2px}
+.cat b{font-weight:600}
+.cat span{font-size:13px;color:var(--muted)}
+.cat:hover{border-color:var(--accent)}
+.grid-jobs{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;grid-template-columns:52px 1fr;gap:14px;text-decoration:none;align-items:start;position:relative}
+.card:hover{border-color:var(--accent)}
+.logo{width:52px;height:52px;border-radius:9px;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:17px;background:var(--accent-soft);color:var(--accent)}
+.card-body{min-width:0;display:grid;gap:3px}
+.card h3{font-size:16px;margin:0;line-height:1.35;font-weight:600}
+.company{font-size:13.5px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.pill{font-size:12.5px;padding:2px 9px;border-radius:5px;background:var(--bg);color:var(--muted);border:1px solid var(--line);white-space:nowrap}
+.pill.salary{background:var(--warm-soft);color:var(--warm);border-color:transparent;font-weight:600;font-variant-numeric:tabular-nums}
+.badge-hot{position:absolute;top:12px;right:12px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--warm)}
+.emps{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.emp{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;gap:12px;align-items:center;cursor:pointer;text-align:left}
+.emp div{min-width:0}
+.emp b{display:block;font-size:14.5px;line-height:1.35}
+.emp span{font-size:13px;color:var(--muted)}
+/* results */
+.results{display:grid;grid-template-columns:250px 1fr;gap:22px;padding-block:24px 40px;align-items:start}
+.filters{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:16px;position:sticky;top:76px}
+.filters fieldset{border:0;padding:0;margin:0;display:grid;gap:6px}
+.filters legend{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.filters label{display:flex;gap:8px;align-items:center;font-size:14px;cursor:pointer}
+.list{display:grid;gap:10px;min-width:0}
+.list-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.list-head select{padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:32px;text-align:center;color:var(--muted)}
+/* detail */
+.crumb{font-size:13.5px;color:var(--muted);padding-top:18px}
+.crumb a{color:var(--accent);text-decoration:none}
+.detail{display:grid;grid-template-columns:1fr 320px;gap:22px;padding-block:14px 40px;align-items:start}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:14px;min-width:0}
+.job-title{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:center}
+.job-title .logo{width:64px;height:64px;font-size:20px}
+.job-title h1{font-family:var(--display);font-size:clamp(21px,3.5vw,27px);margin:0;line-height:1.25;text-wrap:balance}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;border-block:1px solid var(--line);padding-block:14px}
+.facts div{display:grid}
+.facts small{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.facts b{font-weight:600;font-variant-numeric:tabular-nums}
+.facts .money{color:var(--warm)}
+.panel h3{font-size:16px;margin:0;font-family:var(--display);font-weight:600}
+.panel ul{margin:0;padding-left:20px;display:grid;gap:4px}
+.apply-sec{border-top:2px solid var(--accent);padding-top:18px;margin-top:6px;display:grid;gap:12px;scroll-margin-top:80px}
+.apply-sec h2{font-size:20px}
+.steps{margin:0;padding-left:20px;display:grid;gap:4px}
+.copy-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.copy-row b{min-width:0;overflow-wrap:anywhere;flex:1}
+.copy-row .note{width:56px}
+.actions-row{display:flex;gap:8px;flex-wrap:wrap}
+.btn.big{padding:12px 26px;font-size:15.5px}
+.side{display:grid;gap:14px;position:sticky;top:76px}
+.note{font-size:13px;color:var(--muted);margin:0}
+form.grid{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+form.grid .full{grid-column:1/-1}
+.fld{display:grid;gap:4px;font-size:13px;font-weight:500;color:var(--muted)}
+.fld input,.fld select,.fld textarea{padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);font-size:14.5px;min-width:0;width:100%}
+.fld.check{display:flex;align-items:center;gap:8px;color:var(--fg)}
+.fld.check input{width:auto}
+pre.msg{white-space:pre-wrap;background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:12px;margin:0;font-family:var(--body);font-size:14px;user-select:all}
+.alert{padding:10px 14px;border-radius:8px;background:var(--accent-soft);color:var(--fg);font-size:14px}
+.alert.err{background:var(--warm-soft)}
+.mini-list{display:grid;gap:8px}
+.mini{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:8px;flex-wrap:wrap}
+.mini div{min-width:0}
+.mini b{display:block;font-size:14.5px}
+.mini span{font-size:13px;color:var(--muted)}
+.mini .acts{display:flex;gap:6px}
+footer{border-top:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13.5px}
+footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sample{font-size:12.5px;background:var(--warm-soft);color:var(--warm);padding:6px 0;text-align:center;font-weight:500}
+.filter-toggle{display:none}
+@media (max-width:860px){
+  .results,.detail{grid-template-columns:1fr}
+  .filters,.side{position:static}
+  .filter-toggle{display:inline-flex}
+  .filters[data-collapsed="true"]{display:none}
+}
+@media (max-width:620px){
+  .search{grid-template-columns:1fr}
+  .search select{border-left:0;border-top:1px solid var(--line)}
+  .grid-jobs{grid-template-columns:1fr}
+  form.grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:no-preference){.view{animation:fade .2s ease-out}@keyframes fade{from{transform:translateY(4px)}to{transform:none}}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script type="application/json" id="data">
+{"settings": {"contactName": "Phòng tuyển dụng", "email": "haiyendt.hr@gmail.com", "sample": false, "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdCb3mA7SZNudYA9Usq4fgYcGVRz3LBboYbkruQUUAJkmSuPg/viewform", "formEntry": "1533825819", "formOptions": ["Kế toán kho", "Nhân viên Digital Marketing (YouTube âm nhạc)", "Media Executive (Chuyên viên Media)", "B2B Sales Consultant (Tư vấn quảng cáo B2B)", "Business Development Manager", "Công nhân sản xuất"]}, "jobs": [{"id": "ktkho", "title": "Kế toán kho", "company": "Khách hàng của Yến đang tìm kiếm vị trí", "location": "Hà Nội", "address": "Đống Đa, Hà Nội", "category": "Kế toán / Tài chính", "level": "Nhân viên", "type": "Toàn thời gian", "salaryMin": 12, "salaryMax": 13, "qty": 1, "posted": "2026-11-12", "deadline": "2026-12-31", "hot": true, "hours": "9h00–18h00, thứ 2 – thứ 7; nghỉ 4 Chủ nhật và 2 thứ 7 mỗi tháng theo lịch công ty", "intro": "Khách hàng là một thương hiệu thời trang bầu tự thiết kế và sản xuất, bán qua cửa hàng và kênh online, đội ngũ khoảng 20 người. Kế toán kho đảm bảo số liệu hàng hóa, vật tư tại kho và cửa hàng luôn khớp với hệ thống, kiểm soát thu – chi nội bộ và báo cáo tồn kho kịp thời cho Ban Giám đốc.", "desc": ["Kiểm kê hàng hóa định kỳ tại kho và cửa hàng; đối chiếu với hệ thống, báo cáo chênh lệch kèm nguyên nhân", "Quản lý số liệu nhập – xuất – hoàn hàng trên hệ thống; kiểm tra chứng từ, phối hợp kho, cửa hàng và Kinh doanh xử lý sai lệch", "Theo dõi các khoản thu, chi; kiểm tra chứng từ, hóa đơn và đối chiếu thanh toán", "Kiểm soát chi phí mua sắm và tồn kho vật tư, đề xuất bổ sung khi cần", "Tổng hợp hàng tồn lâu, bán chậm, sắp hết; đề xuất kế hoạch đặt hàng cho Ban Giám đốc"], "req": ["Tốt nghiệp ngành Kế toán, Tài chính hoặc liên quan", "1–2 năm kinh nghiệm kế toán kho hoặc kế toán nội bộ", "Thành thạo Excel/Google Sheets", "Ưu tiên: biết dùng phần mềm Nhanh.vn", "Ưu tiên: có kinh nghiệm ngành thời trang, bán lẻ hoặc thương mại điện tử", "Cẩn thận, trung thực, trách nhiệm; đối chiếu số liệu tốt, phối hợp tốt với các bộ phận"], "ben": ["Thu nhập 12 – 13 triệu đồng/tháng tùy năng lực và kinh nghiệm", "Được hướng dẫn quy trình và cung cấp công cụ làm việc", "Bảo hiểm, nghỉ phép và phúc lợi theo luật và chính sách công ty", "Ưu đãi khi mua sản phẩm của công ty cho bản thân và người thân"], "applyNote": "Gửi CV qua form ứng tuyển."}, {"id": "mkt", "title": "Nhân viên Digital Marketing (YouTube âm nhạc)", "company": "Khách hàng của Yến đang tìm kiếm vị trí", "location": "Hà Nội", "address": "Đống Đa, Hà Nội", "category": "Marketing", "level": "Nhân viên", "type": "Toàn thời gian", "salaryMin": 9, "salaryMax": 11, "salaryText": "9–11 triệu + thưởng doanh thu", "qty": null, "posted": "2026-11-12", "deadline": "2026-12-31", "hot": true, "hours": "8h30–17h30, thứ 2 – thứ 6 (nghỉ trưa 12h00–13h30); thứ 7 làm cách tuần", "intro": "Nghiên cứu thị trường, đề xuất giải pháp marketing; trực tiếp vận hành và phát triển kênh YouTube âm nhạc – giải trí, tối ưu các chỉ số kênh, phối hợp các phòng ban để đảm bảo tuân thủ chính sách nền tảng. Phòng Khai thác, báo cáo cho Trưởng nhóm Khai thác.", "desc": ["Nghiên cứu thị trường, thị hiếu khán giả; xây dựng chân dung khách hàng và đề xuất giải pháp marketing cho từng tệp đối tượng", "Nghiên cứu xu hướng nội dung âm nhạc, giải trí và hành vi xem trên nền tảng số; đề xuất cách khai thác tối ưu kho nội dung có sẵn của công ty", "Quản lý, vận hành và phát triển các kênh YouTube âm nhạc, giải trí", "Thiết kế thumbnail bằng công cụ công ty cung cấp, quản lý lịch đăng video theo kế hoạch kênh", "Theo dõi, phân tích hiệu quả kênh: lượt hiển thị, tỷ lệ click, lượt xem, thời gian xem trung bình, lượt đăng ký", "Tối ưu kênh bằng SEO và marketing: tiêu đề, mô tả, từ khóa, thẻ tag, playlist, phát triển cộng đồng; thử nghiệm cách làm mới để tăng trưởng", "Quản lý, lưu trữ tài nguyên nội dung dự án theo hướng dẫn của quản lý", "Phối hợp các bộ phận xử lý vấn đề bản quyền và chính sách YouTube khi phát sinh"], "req": ["Tốt nghiệp hoặc chờ bằng Cao đẳng/Đại học ngành Marketing, Kinh tế, Truyền thông, Quản trị kinh doanh, CNTT hoặc liên quan", "Từ 1 năm kinh nghiệm Marketing, Content Creation là điểm cộng", "Biết dùng công cụ AI cơ bản (ChatGPT, Gemini) trong lên ý tưởng, sản xuất nội dung là điểm cộng", "Biết dùng Canva, Photoshop, CapCut ở mức cơ bản", "Chủ động nghiên cứu, cập nhật xu hướng; yêu thích và muốn gắn bó lâu dài với lĩnh vực quảng bá âm nhạc, giải trí", "Kỷ luật, kiên trì, trách nhiệm, làm việc nhóm tốt", "Có ý thức bảo mật và bảo vệ tài sản trí tuệ của công ty", "Ham học hỏi, cầu tiến"], "ben": ["Lương 9.000.000 – 11.000.000 VNĐ/tháng + thưởng doanh thu", "Được cung cấp thiết bị làm việc", "Review lương 2 lần/năm, lương tháng 13, thưởng lễ Tết", "Đóng BHXH, BHYT, BHTN theo quy định", "Phúc lợi sinh nhật, ốm đau, hiếu hỉ", "Nghỉ phép 12 ngày/năm cùng các ngày lễ, Tết", "Du lịch, nghỉ mát hằng năm", "Môi trường trẻ, cởi mở, chuyên nghiệp", "Cơ hội thăng tiến lên vị trí Quản lý"], "applyNote": "Gửi CV và Portfolio (nếu có) qua form ứng tuyển. Công ty có thể chỉ phản hồi ứng viên phù hợp, bạn nhớ kiểm tra cả hộp thư Spam/Promotions."}, {"id": "media", "title": "Media Executive (Chuyên viên Media)", "company": "Khách hàng của Yến đang tìm kiếm vị trí", "location": "Hà Nội", "address": "Đống Đa, Hà Nội", "category": "Truyền thông / Media", "level": "Nhân viên", "type": "Toàn thời gian", "salaryMin": null, "salaryMax": 20, "salaryText": "Up to 20++ triệu", "qty": 1, "posted": "2026-11-12", "deadline": "2026-12-31", "hot": true, "hours": "8h30–17h30, thứ 2 – thứ 7; mỗi tháng 2 ngày thứ 7 làm remote", "intro": "Khách hàng là một thương hiệu thời trang bầu tự thiết kế và sản xuất, bán qua cửa hàng và kênh online, đội ngũ khoảng 20 người. Media Executive phụ trách toàn bộ hình ảnh, video của thương hiệu, từ ý tưởng, quay chụp đến dựng và đăng tải, nhằm tăng tiếp cận, tương tác và đơn hàng trên Facebook, Instagram, TikTok, Shopee và website. Thuộc bộ phận Marketing, báo cáo cho Chủ thương hiệu / Trưởng bộ phận Marketing.", "desc": ["Cùng Marketing lên kế hoạch nội dung hình ảnh, video theo tuần/tháng, bám theo bộ sưu tập mới, khuyến mãi và các dịp lễ", "Viết kịch bản ngắn cho TikTok, Reels, livestream; theo dõi trend và áp dụng phù hợp thương hiệu", "Chụp ảnh sản phẩm (flatlay, ma-nơ-canh, mẫu bầu mặc thật) cho website, Shopee, fanpage", "Quay video lookbook, review sản phẩm, hậu trường, feedback khách tại cửa hàng; chuẩn bị bối cảnh, ánh sáng, đạo cụ", "Chỉnh ảnh, dựng video ngắn 15–60 giây và video dài theo định dạng từng nền tảng", "Thiết kế banner, ảnh quảng cáo, thumbnail đơn giản theo nhận diện thương hiệu", "Đăng nội dung lên Facebook, Instagram, TikTok, Shopee theo lịch; hỗ trợ quay và kỹ thuật cho livestream bán hàng", "Lưu trữ, sắp xếp kho ảnh/video gọn gàng cho cả đội", "Theo dõi lượt xem, tương tác, chuyển đổi; báo cáo tuần/tháng và đề xuất cải thiện; cung cấp hình ảnh, video cho Facebook Ads, TikTok Ads"], "req": ["Tốt nghiệp Cao đẳng/Đại học ngành Truyền thông, Marketing, Thiết kế, Quay phim – Nhiếp ảnh hoặc liên quan (ưu tiên năng lực thực tế hơn bằng cấp)", "Ít nhất 1 năm kinh nghiệm quay chụp, dựng video, ưu tiên ngành thời trang hoặc bán lẻ", "Thành thạo ít nhất một phần mềm chỉnh ảnh (Lightroom, Photoshop) và một phần mềm dựng video (Premiere, CapCut, Final Cut)", "Biết dùng máy ảnh, đèn, gimbal; quay dựng tốt video dọc trên điện thoại", "Có portfolio ảnh/video gửi kèm hồ sơ", "Ưu tiên: hiểu TikTok, Reels, Shopee Video và xu hướng nội dung mới", "Ưu tiên: có gu thời trang nữ, hiểu tâm lý mẹ bầu và phụ nữ sau sinh; biết Canva, Photoshop, từng hỗ trợ livestream", "Sáng tạo, chủ động, chịu được nhịp làm việc nhanh; cẩn thận, đúng hạn, phối hợp tốt với Kinh doanh, Thiết kế, Sản xuất"], "ben": ["Lương cứng + thưởng theo KPI nội dung và doanh số, tổng thu nhập up to 20++ triệu/tháng", "Thưởng lễ, Tết, sinh nhật; xét tăng lương định kỳ theo năng lực", "Được trang bị thiết bị quay chụp và phòng chụp tại công ty", "Ưu đãi khi mua sản phẩm của công ty cho bản thân và người thân", "Môi trường trẻ, thân thiện, tự do sáng tạo và thử nghiệm ý tưởng", "BHXH theo quy định cho nhân sự toàn thời gian"], "applyNote": "Gửi CV và portfolio (link Drive, TikTok, YouTube hoặc Behance) qua form ứng tuyển (dán link portfolio vào ô lời nhắn)."}, {"id": "b2b", "title": "B2B Sales Consultant (Tư vấn quảng cáo B2B)", "company": "Khách hàng của Yến đang tìm kiếm vị trí", "location": "Hà Nội", "alsoIn": ["TP.HCM"], "address": "Hà Nội và TP.HCM", "category": "Kinh doanh / Sales", "level": "Nhân viên", "type": "Toàn thời gian", "salaryMin": null, "salaryMax": 23, "salaryText": "Up to $900 + thưởng doanh số", "qty": null, "posted": "2026-11-12", "deadline": "2026-12-31", "hot": true, "intro": "Phát triển khách hàng doanh nghiệp, tư vấn giải pháp quảng cáo và cùng các team nội bộ triển khai chiến dịch cho khách hàng. Phù hợp với người có kinh nghiệm B2B Sales hoặc muốn chuyển sang lĩnh vực Digital Advertising. Quy trình: Screening → Phỏng vấn chuyên môn → Phỏng vấn văn hóa → Offer.", "desc": ["Xây dựng và duy trì quan hệ lâu dài với khách hàng, chủ động tìm cơ hội kinh doanh mới", "Giới thiệu, tư vấn và tăng nhận diện về Ads tới khách hàng hiện hữu và tiềm năng", "Tư vấn, xây dựng và triển khai chiến dịch quảng cáo trên nền tảng Ads cho khách hàng", "Đạt mục tiêu doanh số, theo dõi các chỉ số kinh doanh", "Lập kế hoạch, hỗ trợ khách hàng để chiến dịch đạt KPI", "Đề xuất giải pháp tối ưu hiệu quả quảng cáo, làm báo cáo phân tích", "Các công việc khác theo phân công của quản lý"], "req": ["Tối thiểu 2 năm kinh nghiệm Sales / Business Development / Account Management / Sales Consultant hoặc tương tự trong ngành Truyền thông – Quảng cáo", "Tiếng Anh giao tiếp tốt", "Có kiến thức nền tảng về Digital Marketing", "Thành thạo Microsoft Office, đặc biệt Excel và PowerPoint; biết phần mềm quản lý khách hàng là lợi thế", "Biết lập, đọc, phân tích dữ liệu và báo cáo", "Cẩn thận, chủ động, trách nhiệm, tư duy logic, giao tiếp tốt"], "ben": ["Lương thưởng cạnh tranh, lương tháng 13", "Đánh giá hiệu suất 2 lần/năm", "Nghỉ phép tối thiểu 20 ngày/năm (gồm 1 ngày sinh nhật)", "Phúc lợi công đoàn: sinh nhật, cưới, sinh con…", "Khám sức khỏe định kỳ, bảo hiểm Bảo Việt và bảo hiểm theo luật", "Đào tạo thường xuyên, môi trường quốc tế, làm việc cùng đối tác trong và ngoài nước", "Văn hóa linh hoạt, không gò bó trang phục, có chính sách làm từ xa hằng năm", "Văn phòng hiện đại, đồ ăn nhẹ, cà phê, trà; CLB tiếng Anh, yoga, bóng đá…"], "applyNote": "Gửi CV qua form ứng tuyển."}, {"id": "bdm", "title": "Business Development Manager", "company": "Khách hàng của Yến đang tìm kiếm vị trí", "location": "Hà Nội", "alsoIn": ["TP.HCM"], "address": "Hà Nội và TP.HCM", "category": "Kinh doanh / Sales", "level": "Quản lý", "type": "Toàn thời gian", "salaryMin": null, "salaryMax": null, "qty": null, "posted": "2026-11-12", "deadline": "2026-12-31", "hot": true, "intro": "Khách hàng là một công ty công nghệ hàng đầu Việt Nam, xây dựng sản phẩm phục vụ hàng triệu người dùng. Vị trí thuộc bộ phận Sales, yêu cầu ứng viên đã có kinh nghiệm. Quy trình: Phone Screening → Phỏng vấn chuyên môn → Phỏng vấn văn hóa → Offer.", "desc": ["Xây dựng và duy trì quan hệ bền vững, lâu dài với khách hàng", "Nghiên cứu và mở rộng tệp khách hàng", "Lập kế hoạch chi tiết để tiếp cận và làm việc với từng khách hàng", "Phối hợp với quản lý dự án đặc biệt và chuyên viên hoạch định chiến lược để đưa ra ý tưởng, chiến lược truyền tải thông điệp quảng cáo tới khách hàng", "Chủ động tìm cơ hội kinh doanh mới, đề xuất giải pháp kịp thời để đạt mục tiêu", "Tổ chức và tham gia workshop, sự kiện để phát triển hình ảnh thương hiệu", "Các công việc khác theo phân công của quản lý trực tiếp"], "req": ["Tốt nghiệp Đại học hoặc tương đương, ít nhất 3 năm kinh nghiệm B2B Sales / Business Development hoặc vị trí tương tự", "Hiểu về quảng cáo trực tuyến hoặc digital marketing là lợi thế lớn", "Làm việc tốt trong môi trường năng động, thay đổi nhanh", "Giao tiếp tốt cả tiếng Anh và tiếng Việt", "Kỹ năng viết, nói, thuyết trình tốt; thuyết phục được cả đối tượng kinh doanh và kỹ thuật", "Ra quyết định, tư duy phân tích và quản trị rủi ro tốt", "Kỹ năng lập kế hoạch, tổ chức, dự báo; hiểu vận hành doanh nghiệp đa mảng"], "ben": ["Lương thưởng cạnh tranh, lương tháng 13", "Đánh giá hiệu suất 2 lần/năm, cơ hội thăng tiến hoặc luân chuyển nội bộ", "Nghỉ phép tối thiểu 19 ngày/năm, thêm 1 ngày nghỉ sinh nhật", "Chính sách làm việc tại nhà hằng năm", "Bảo hiểm sức khỏe cao cấp 24/7 cho toàn bộ nhân viên", "Phúc lợi công đoàn: sinh nhật, cưới, sinh con…", "Đào tạo, coaching, chia sẻ kiến thức nội bộ thường xuyên; làm việc cùng đồng nghiệp và đối tác trong và ngoài nước", "Pantry nhiều đồ ăn nhẹ, nước, cà phê, trà; CLB tiếng Anh, yoga, bi-a, bóng đá"], "applyNote": "Gửi CV qua form ứng tuyển."}, {"id": "cn", "title": "Công nhân sản xuất", "company": "", "location": "Quảng Ninh", "address": "KCN Đông Mai, Quảng Yên", "category": "Sản xuất / Công nhân", "level": "Nhân viên", "type": "Toàn thời gian", "salaryMin": 8, "salaryMax": 11, "qty": 30, "posted": "2026-11-12", "deadline": "2026-12-31", "hot": true, "desc": ["Làm việc theo ca tại xưởng lắp ráp linh kiện", "Đứng máy, kiểm tra và đóng gói sản phẩm"], "req": ["Nam/nữ 18–40 tuổi, sức khỏe tốt", "Không cần kinh nghiệm, được đào tạo"], "ben": ["Đóng BHXH đầy đủ, thưởng chuyên cần", "Có xe đưa đón, ăn ca miễn phí"], "sample": true}]}
+</script>
+<script id="main">
+(function(){
+const LOCS=["Hà Nội","Quảng Ninh","Hải Phòng","TP.HCM"];
+const CATS=["Sản xuất / Công nhân","Kho vận / Logistics","Kinh doanh / Sales","Marketing","Truyền thông / Media","Dịch vụ / Nhà hàng","Hành chính / Nhân sự","Kế toán / Tài chính"];
+const LEVELS=["Nhân viên","Trưởng nhóm","Quản lý"];
+const TYPES=["Toàn thời gian","Bán thời gian","Thời vụ"];
+const SAL=[["all","Tất cả"],["lt10","Dưới 10 triệu"],["10-20","10–20 triệu"],["gt20","Trên 20 triệu"],["deal","Thỏa thuận"]];
+let DATA;try{DATA=JSON.parse(document.getElementById("data").textContent)}catch(e){DATA={settings:{},jobs:[]}}
+const S=DATA.settings, app=document.getElementById("app");
+const ui={q:"",loc:"",cats:[],levels:[],types:[],sal:"all",sort:"new",filtersOpen:false,applyOut:null,editId:null,canEdit:null,saving:false,msg:null,confirmDel:null};
+let artifactApi=null;
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const today=new Date();today.setHours(0,0,0,0);
+const daysLeft=d=>Math.round((new Date(d+"T00:00:00")-today)/864e5);
+const fmtDate=d=>{const [y,m,dd]=d.split("-");return dd+"/"+m+"/"+y};
+const salary=j=>j.salaryText?j.salaryText:j.salaryMin==null&&j.salaryMax==null?"Thỏa thuận":j.salaryMin!=null&&j.salaryMax!=null?(j.salaryMin===j.salaryMax?j.salaryMin+" triệu":j.salaryMin+"–"+j.salaryMax+" triệu"):j.salaryMin!=null?"Từ "+j.salaryMin+" triệu":"Đến "+j.salaryMax+" triệu";
+const initials=n=>String(n).replace(/\(.*?\)/g,"").replace(/^(Công ty|Cty|TNHH)\s*/i,"").trim().split(/\s+/).slice(0,2).map(w=>w[0]||"").join("").toUpperCase();
+const active=()=>DATA.jobs.filter(j=>daysLeft(j.deadline)>=0);
+const salOk=(j,s)=>{if(s==="all")return true;const deal=j.salaryMin==null&&j.salaryMax==null;if(s==="deal")return deal;if(deal)return false;const hi=j.salaryMax??j.salaryMin,lo=j.salaryMin??j.salaryMax;return s==="lt10"?lo<10:s==="gt20"?hi>20:(lo<=20&&hi>=10)};
+function filtered(){
+  const k=ui.q.trim().toLowerCase();
+  let r=active().filter(j=>(!k||(j.title+" "+j.company+" "+j.category).toLowerCase().includes(k))&&(!ui.loc||j.location===ui.loc||(j.alsoIn||[]).includes(ui.loc))&&(!ui.cats.length||ui.cats.includes(j.category))&&(!ui.levels.length||ui.levels.includes(j.level))&&(!ui.types.length||ui.types.includes(j.type))&&salOk(j,ui.sal));
+  r.sort(ui.sort==="new"?(a,b)=>b.posted.localeCompare(a.posted):ui.sort==="deadline"?(a,b)=>a.deadline.localeCompare(b.deadline):(a,b)=>(b.salaryMax??b.salaryMin??0)-(a.salaryMax??a.salaryMin??0));
+  return r;
+}
+function card(j){const d=daysLeft(j.deadline);return `<a class="card" href="#job-${esc(j.id)}">
+  ${j.hot?'<span class="badge-hot">Gấp</span>':""}
+  <div class="logo" aria-hidden="true">${esc(initials(j.title))}</div>
+  <div class="card-body"><h3>${esc(j.title)}</h3><div class="company">${esc(j.company||j.address||j.location)}</div>
+  <div class="pills"><span class="pill salary">${esc(salary(j))}</span><span class="pill">${esc([j.location].concat(j.alsoIn||[]).join(", "))}</span><span class="pill">${d===0?"Hết hạn hôm nay":"Còn "+d+" ngày"}</span>${j.sample?'<span class="pill">Tin mẫu</span>':""}</div></div></a>`}
+function nav(route){const l=(h,t,key)=>`<a href="#${h}" ${route===key?'aria-current="page"':""}>${t}</a>`;
+  return `${S.sample?'<div class="sample">Dữ liệu mẫu: công ty, lương và liên hệ là ví dụ. Mức lương và mô tả đang là ví dụ, sẽ được cập nhật.</div>':""}
+  <header class="nav"><div class="wrap"><a class="brand" href="#home"><i>VN</i>VN Job Listing</a>
+  <nav aria-label="Chính">${l("home","Trang chủ","home")}${l("jobs","Tìm việc","jobs")}${l("employer","Liên hệ đăng tin","employer")}</nav>
+  <a class="btn warm" href="#employer">Đăng tin tuyển dụng</a></div></header>`}
+function searchBar(){return `<form class="search" id="searchForm" role="search">
+  <input id="sq" type="search" placeholder="Chức danh, công ty, ngành nghề…" value="${esc(ui.q)}" aria-label="Từ khóa">
+  <select id="sl" aria-label="Địa điểm"><option value="">Tất cả địa điểm</option>${LOCS.map(x=>`<option ${ui.loc===x?"selected":""}>${x}</option>`).join("")}</select>
+  <button class="btn warm" type="submit">Tìm việc</button></form>`}
+function home(){
+  const a=active();
+  const hot=a.filter(j=>j.hot).concat(a.filter(j=>!j.hot));
+  const cats=CATS.map(c=>[c,a.filter(j=>j.category===c).length]).filter(x=>x[1]>0);
+  return `<section class="hero"><div class="wrap"><h1>Tìm việc gần nhà, ứng tuyển trong một phút</h1>
+  <p>Việc làm được cập nhật thường xuyên ở Hà Nội, Quảng Ninh và Hải Phòng.</p>
+  ${searchBar()}
+  <div class="stats"><span><b>${a.length}</b>việc đang tuyển</span><span><b>${new Set(a.map(j=>j.location)).size}</b>tỉnh / thành</span><span><b>${a.reduce((s,j)=>s+(+j.qty||1),0)}</b>vị trí cần người</span></div></div></section>
+  <div class="wrap">
+  <section class="section"><div class="section-head"><h2>Ngành nghề</h2></div>
+   <div class="cats">${cats.map(([c,n])=>`<button class="cat" data-cat="${esc(c)}"><b>${esc(c)}</b><span>${n} việc làm</span></button>`).join("")}</div></section>
+  <section class="section"><div class="section-head"><h2>Vị trí đang tuyển</h2><a class="link" href="#jobs">Lọc theo ngành, lương</a></div>
+   ${hot.length?`<div class="grid-jobs">${hot.map(card).join("")}</div>`:'<div class="empty">Chưa có tin tuyển dụng nào đang mở.</div>'}</section>
+  </div>`}
+function checks(name,opts,sel){return opts.map(o=>`<label><input type="checkbox" name="${name}" value="${esc(o)}" ${sel.includes(o)?"checked":""}> ${esc(o)}</label>`).join("")}
+function jobs(){
+  const r=filtered();
+  return `<section class="hero"><div class="wrap" style="padding-block:22px">${searchBar()}</div></section>
+  <div class="wrap results">
+   <aside class="filters" id="filters" data-collapsed="${!ui.filtersOpen}" aria-label="Bộ lọc">
+    <fieldset><legend>Ngành nghề</legend>${checks("cat",CATS,ui.cats)}</fieldset>
+    <fieldset><legend>Mức lương</legend>${SAL.map(([v,t])=>`<label><input type="radio" name="sal" value="${v}" ${ui.sal===v?"checked":""}> ${t}</label>`).join("")}</fieldset>
+    <fieldset><legend>Cấp bậc</legend>${checks("level",LEVELS,ui.levels)}</fieldset>
+    <fieldset><legend>Hình thức</legend>${checks("type",TYPES,ui.types)}</fieldset>
+    <button class="btn ghost" id="clearF" type="button">Xóa bộ lọc</button>
+   </aside>
+   <div class="list">
+    <div class="list-head"><div><b>${r.length}</b> việc làm${ui.q?` cho “${esc(ui.q)}”`:""}${ui.loc?` tại ${esc(ui.loc)}`:""}</div>
+     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost filter-toggle" id="ftog" type="button" aria-expanded="${ui.filtersOpen}">Bộ lọc</button>
+     <select id="sort" aria-label="Sắp xếp"><option value="new" ${ui.sort==="new"?"selected":""}>Mới nhất</option><option value="salary" ${ui.sort==="salary"?"selected":""}>Lương cao nhất</option><option value="deadline" ${ui.sort==="deadline"?"selected":""}>Sắp hết hạn</option></select></div></div>
+    ${r.length?r.map(card).join(""):'<div class="empty">Không có việc phù hợp. Thử bỏ bớt bộ lọc hoặc đổi từ khóa.</div>'}
+   </div></div>`}
+function li(a){return "<ul>"+(a||[]).map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>"}
+function detail(id){
+  const j=DATA.jobs.find(x=>x.id===id);
+  if(!j)return `<div class="wrap section"><div class="empty">Tin tuyển dụng này không còn. <a class="link" href="#jobs">Xem việc khác</a></div></div>`;
+  const d=daysLeft(j.deadline),same=active().filter(x=>x.id!==j.id&&(x.category===j.category||x.company===j.company)).slice(0,3);
+  return `<div class="wrap"><div class="crumb"><a href="#jobs">Tìm việc</a> › ${esc(j.category)}</div>
+  <div class="detail">
+   <article class="panel">
+    <div class="job-title"><div class="logo" aria-hidden="true">${esc(initials(j.title))}</div><div><h1>${esc(j.title)}</h1><div class="company">${esc(j.company||j.category)}</div></div></div>
+    <div class="facts"><div><small>Mức lương</small><b class="money">${esc(salary(j))}</b></div><div><small>Địa điểm</small><b>${esc(j.address||j.location)}</b></div>${j.qty?`<div><small>Số lượng</small><b>${esc(j.qty)} người</b></div>`:""}<div><small>Hạn nộp</small><b>${fmtDate(j.deadline)}${d>=0?` (còn ${d} ngày)`:" (đã hết hạn)"}</b></div><div><small>Cấp bậc</small><b>${esc(j.level)}</b></div><div><small>Hình thức</small><b>${esc(j.type)}</b></div>${j.hours?`<div style="grid-column:1/-1"><small>Thời gian làm việc</small><b>${esc(j.hours)}</b></div>`:""}</div>
+    ${j.intro?`<p style="margin:0">${esc(j.intro)}</p>`:""}
+    <h3>Mô tả công việc</h3>${li(j.desc)}<h3>Yêu cầu ứng viên</h3>${li(j.req)}<h3>Quyền lợi</h3>${li(j.ben)}
+    <p class="note">Đăng ngày ${fmtDate(j.posted)}${j.sample?" · Tin mẫu, nội dung đang là ví dụ":""}</p>
+    <section class="apply-sec" id="apply-sec" aria-labelledby="apply-h">
+     <h2 id="apply-h">Ứng tuyển vị trí này</h2>
+     ${d<0?'<p class="note">Tin đã hết hạn nhận hồ sơ.</p>':applyBlock(j)}
+    </section>
+   </article>
+   <aside class="side">
+    <div class="panel"><h3>${esc(j.title)}</h3><p style="margin:0"><b class="money" style="color:var(--warm)">${esc(salary(j))}</b><br><span class="note">${esc(j.address||j.location)}</span></p>
+     ${d<0?"":S.formUrl?`<a class="btn primary" href="${esc(formLink(j))}" target="_blank" rel="noopener">Ứng tuyển ngay</a>`:'<button class="btn primary" type="button" data-scroll="apply-sec">Ứng tuyển ngay</button>'}</div>
+    <div class="panel"><h3>Liên hệ tuyển dụng</h3><p style="margin:0">${esc(S.contactName)}<br>Email: <b>${esc(S.email)}</b></p>
+     <button class="btn ghost" type="button" data-copy="${esc(S.email)}">Sao chép email</button></div>
+    ${same.length?`<div class="panel"><h3>Việc làm tương tự</h3><div class="mini-list">${same.map(x=>`<a class="mini" href="#job-${esc(x.id)}" style="text-decoration:none"><div><b>${esc(x.title)}</b><span>${esc(salary(x))} · ${esc(x.location)}</span></div></a>`).join("")}</div></div>`:""}
+   </aside></div></div>`}
+function formLink(j){if(!S.formUrl)return "";const opts=S.formOptions||[];const v=opts.includes(j.title)?j.title:"Vị trí khác";
+  return S.formUrl+(S.formEntry?"?usp=pp_url&entry."+S.formEntry+"="+encodeURIComponent(v):"")}
+function applyBlock(j){
+  const link=formLink(j);
+  return `${j.applyNote?`<p style="margin:0">${esc(j.applyNote)}</p>`:""}
+   <ul class="steps"><li>Điền họ tên, số điện thoại, email và vài thông tin cơ bản.</li><li>Tải CV lên, chỉ nhận file <b>PDF hoặc Word</b>, tối đa 10 MB.</li></ul>
+   ${link?`<div class="actions-row"><a class="btn primary big" href="${esc(link)}" target="_blank" rel="noopener">Ứng tuyển ngay</a></div>
+   <p class="note">Form mở trong tab mới và cần đăng nhập Google để tải CV. Không dùng được form? Gửi CV qua email ${esc(S.email)}, tiêu đề: Ứng tuyển ${esc(j.title)} – Họ tên.</p>`
+   :`<p style="margin:0">Gửi CV qua email <b>${esc(S.email)}</b>, tiêu đề: Ứng tuyển ${esc(j.title)} – Họ tên.</p><div><button class="btn primary" type="button" data-copy="${esc(S.email)}">Sao chép email</button></div>`}`}
+function jobForm(j){j=j||{};const opt=(arr,v)=>arr.map(o=>`<option ${o===v?"selected":""}>${esc(o)}</option>`).join("");const lines=a=>esc((a||[]).join("\n"));
+  const dl=j.deadline||new Date(Date.now()+30*864e5).toISOString().slice(0,10);
+  return `<form class="grid" id="jobForm">
+  <label class="fld full">Chức danh<input id="j-title" name="title" required value="${esc(j.title)}" placeholder="VD: Công nhân may"></label>
+  <label class="fld full">Tên công ty (không bắt buộc)<input id="j-company" name="company" value="${esc(j.company)}"></label>
+  <label class="fld">Tỉnh / thành<select id="j-location" name="location">${opt(LOCS,j.location)}</select></label>
+  <label class="fld">Địa chỉ làm việc<input id="j-address" name="address" value="${esc(j.address)}" placeholder="VD: KCN Đông Mai"></label>
+  <label class="fld">Ngành nghề<select id="j-category" name="category">${opt(CATS,j.category)}</select></label>
+  <label class="fld">Cấp bậc<select id="j-level" name="level">${opt(LEVELS,j.level)}</select></label>
+  <label class="fld">Hình thức<select id="j-type" name="type">${opt(TYPES,j.type)}</select></label>
+  <label class="fld">Số lượng tuyển<input id="j-qty" name="qty" type="number" min="1" value="${esc(j.qty||1)}"></label>
+  <label class="fld">Lương từ (triệu)<input id="j-smin" name="salaryMin" type="number" min="0" step="0.5" value="${esc(j.salaryMin)}" placeholder="Bỏ trống = thỏa thuận"></label>
+  <label class="fld">Lương đến (triệu)<input id="j-smax" name="salaryMax" type="number" min="0" step="0.5" value="${esc(j.salaryMax)}"></label>
+  <label class="fld">Hạn nộp hồ sơ<input id="j-deadline" name="deadline" type="date" required value="${esc(dl)}"></label>
+  <label class="fld check"><input id="j-hot" name="hot" type="checkbox" ${j.hot?"checked":""}> Tuyển gấp (hiện ở mục nổi bật)</label>
+  <label class="fld full">Mô tả công việc (mỗi dòng một ý)<textarea id="j-desc" name="desc" rows="3">${lines(j.desc)}</textarea></label>
+  <label class="fld full">Yêu cầu (mỗi dòng một ý)<textarea id="j-req" name="req" rows="3">${lines(j.req)}</textarea></label>
+  <label class="fld full">Quyền lợi (mỗi dòng một ý)<textarea id="j-ben" name="ben" rows="3">${lines(j.ben)}</textarea></label>
+  <div class="full" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" type="submit" ${ui.saving?"disabled":""}>${ui.editId?"Lưu thay đổi":"Đăng tin"}</button>${ui.editId?'<button class="btn ghost" type="button" id="cancelEdit">Hủy sửa</button>':""}</div>
+  </form>`}
+function employer(){
+  const msg=ui.msg?`<div class="alert ${ui.msg.err?"err":""}">${esc(ui.msg.text)}</div>`:"";
+  if(ui.canEdit===null)return `<div class="wrap section"><h2>Nhà tuyển dụng</h2><p class="note">Đang kiểm tra quyền quản lý trang…</p></div>`;
+  if(!ui.canEdit)return `<div class="wrap section" style="max-width:720px"><h2>Đăng tin tuyển dụng</h2>${msg}
+   <div class="panel"><p style="margin:0">Bạn muốn đăng tin trên VN Job Listing? Gửi thông tin vị trí cần tuyển cho chúng tôi, tin sẽ lên trang trong ngày.</p>
+   <p style="margin:0">Email: <b>${esc(S.email)}</b></p>
+   <div><button class="btn primary" type="button" data-copy="${esc(S.email)}">Sao chép email</button></div></div></div>`;
+  const editing=ui.editId?DATA.jobs.find(j=>j.id===ui.editId):null;
+  const sorted=DATA.jobs.slice().sort((a,b)=>b.posted.localeCompare(a.posted));
+  return `<div class="wrap section"><div class="section-head"><h2>Quản lý tin tuyển dụng</h2><span class="note">Chỉ chủ trang thấy mục này. Mỗi lần lưu, trang cập nhật cho mọi người xem.</span></div>${msg}
+  <div class="detail" style="padding-top:0">
+   <div class="panel"><h3>${editing?"Sửa tin: "+esc(editing.title):"Đăng tin mới"}</h3>${jobForm(editing)}</div>
+   <aside class="side">
+    <div class="panel"><h3>Tin đã đăng (${DATA.jobs.length})</h3><div class="mini-list">
+     ${sorted.map(j=>{const d=daysLeft(j.deadline);return `<div class="mini"><div><b>${esc(j.title)}</b><span>${esc(j.company||j.location)} · ${d>=0?"còn "+d+" ngày":"hết hạn"}</span></div><div class="acts">
+      ${ui.confirmDel===j.id?`<button class="btn danger" data-del-yes="${esc(j.id)}" ${ui.saving?"disabled":""}>Xóa thật</button><button class="btn ghost" data-del-no>Không</button>`:`<button class="btn ghost" data-edit="${esc(j.id)}">Sửa</button><button class="btn danger" data-del="${esc(j.id)}">Xóa</button>`}</div></div>`}).join("")||'<p class="note">Chưa có tin nào.</p>'}
+    </div></div>
+    <div class="panel"><h3>Thông tin liên hệ</h3><form class="grid" id="setForm">
+     <label class="fld full">Người liên hệ<input id="s-name" name="contactName" value="${esc(S.contactName)}"></label>
+     <label class="fld full">Email<input id="s-email" name="email" type="email" required value="${esc(S.email)}"></label>
+     <label class="fld full">Link form nộp CV (Google Form, không bắt buộc)<input id="s-form" name="formUrl" type="url" placeholder="https://forms.gle/…" value="${esc(S.formUrl)}"></label>
+     <label class="fld check full"><input id="s-sample" name="sample" type="checkbox" ${S.sample?"checked":""}> Hiện dòng báo “dữ liệu mẫu”</label>
+     <button class="btn primary full" type="submit" ${ui.saving?"disabled":""}>Lưu liên hệ</button></form></div>
+   </aside></div></div>`}
+function footer(){return `<footer><div class="wrap"><span><b>VN Job Listing</b> · Việc làm được cập nhật thường xuyên ở HN, QN, HP</span><span>Liên hệ: ${esc(S.email)}</span></div></footer>`}
+function route(){const h=location.hash.slice(1);if(h.startsWith("job-"))return["job",h.slice(4)];if(h==="jobs"||h==="employer")return[h];return["home"]}
+function render(){const [r,id]=route();const body=r==="jobs"?jobs():r==="job"?detail(id):r==="employer"?employer():home();
+  app.innerHTML=nav(r==="job"?"jobs":r)+`<main class="view">${body}</main>`+footer();
+  if(ui.applyOut&&r==="job"&&ui.applyOut.id===id)showApply(ui.applyOut.o);}
+function go(h){if(location.hash==="#"+h){render();scrollTo(0,0)}else location.hash=h}
+window.addEventListener("hashchange",()=>{ui.applyOut=null;ui.confirmDel=null;render();scrollTo(0,0)});
+function copy(text,btn){const done=t=>{btn.textContent=t};navigator.clipboard.writeText(text).then(()=>done("Đã sao chép")).catch(()=>done("Hãy bôi đen và sao chép thủ công"))}
+function showApply(o){const out=document.getElementById("applyOut");if(!out)return;
+  out.innerHTML=`<div style="display:grid;gap:10px;margin-top:6px">
+   <div class="copy-row"><span class="note">Gửi tới</span><b>${esc(S.email)}</b><button class="btn ghost" type="button" data-copy="${esc(S.email)}">Sao chép</button></div>
+   <div class="copy-row"><span class="note">Tiêu đề</span><b>${esc(o.subj)}</b><button class="btn ghost" type="button" data-copy="${esc(o.subj)}">Sao chép</button></div>
+   <pre class="msg" id="applyMsg">${esc(o.body)}</pre>
+   <button class="btn primary" type="button" data-copy="${esc(o.body)}">Sao chép nội dung email</button>
+   <p class="alert">Nhớ <b>đính kèm CV (PDF, DOC hoặc DOCX)</b> trước khi gửi. Bộ phận tuyển dụng sẽ liên hệ lại với ứng viên phù hợp.</p></div>`;}
+const vals=(f,n)=>[...f.querySelectorAll(`input[name="${n}"]:checked`)].map(i=>i.value);
+app.addEventListener("submit",e=>{e.preventDefault();const f=e.target;
+  if(f.id==="searchForm"){ui.q=f.querySelector("#sq").value;ui.loc=f.querySelector("#sl").value;go("jobs");}
+  else if(f.id==="applyForm"){const j=DATA.jobs.find(x=>x.id===f.dataset.id),d=Object.fromEntries(new FormData(f));
+    const subj=`Ứng tuyển ${j.title} – ${d.name.trim()}`;
+    const body=`Kính gửi Anh/Chị phụ trách tuyển dụng,\n\nEm xin ứng tuyển vị trí: ${j.title} (${j.address||j.location}).\n\nHọ tên: ${d.name}\nSố điện thoại: ${d.phone}\nEmail: ${d.mail||"-"}\nNăm sinh: ${d.year||"-"}\nNơi ở: ${d.addr||"-"}\nKinh nghiệm / lời nhắn: ${d.note||"-"}\n\nEm gửi kèm CV trong email này. Mong sớm nhận được phản hồi từ Anh/Chị.\nTrân trọng.`;
+    ui.applyOut={id:j.id,o:{subj,body}};showApply(ui.applyOut.o);}
+  else if(f.id==="jobForm")saveJob(f);
+  else if(f.id==="setForm"){const d=new FormData(f);save(()=>{Object.assign(S,{contactName:d.get("contactName").trim(),email:d.get("email").trim(),formUrl:String(d.get("formUrl")||"").trim(),sample:d.get("sample")==="on"})},"Đã lưu thông tin liên hệ.");}
+});
+app.addEventListener("change",e=>{const t=e.target,f=document.getElementById("filters");
+  if(f&&f.contains(t)){ui.cats=vals(f,"cat");ui.levels=vals(f,"level");ui.types=vals(f,"type");ui.sal=(f.querySelector('input[name="sal"]:checked')||{}).value||"all";render();}
+  else if(t.id==="sort"){ui.sort=t.value;render();}});
+app.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.cat){ui.cats=[b.dataset.cat];ui.q="";go("jobs")}
+  else if(b.dataset.comp){ui.q=b.dataset.comp;ui.cats=[];go("jobs")}
+  else if(b.id==="clearF"){Object.assign(ui,{cats:[],levels:[],types:[],sal:"all"});render()}
+  else if(b.id==="ftog"){ui.filtersOpen=!ui.filtersOpen;render()}
+  else if(b.dataset.copy!==undefined)copy(b.dataset.copy,b);
+  else if(b.dataset.scroll){const t=document.getElementById(b.dataset.scroll);if(t){t.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});const f=t.querySelector("input,a.btn");if(f)setTimeout(()=>f.focus({preventScroll:true}),400)}}
+  else if(b.dataset.edit){ui.editId=b.dataset.edit;ui.msg=null;render();scrollTo(0,0)}
+  else if(b.id==="cancelEdit"){ui.editId=null;render()}
+  else if(b.dataset.del){ui.confirmDel=b.dataset.del;render()}
+  else if(b.dataset.delNo!==undefined){ui.confirmDel=null;render()}
+  else if(b.dataset.delYes){const id=b.dataset.delYes;save(()=>{DATA.jobs=DATA.jobs.filter(j=>j.id!==id)},"Đã xóa tin.")}
+});
+function saveJob(f){const d=new FormData(f),num=k=>{const v=String(d.get(k)||"").trim();return v===""?null:+v},arr=k=>String(d.get(k)||"").split("\n").map(s=>s.trim()).filter(Boolean);
+  let mn=num("salaryMin"),mx=num("salaryMax");if(mn!=null&&mx!=null&&mn>mx)[mn,mx]=[mx,mn];
+  const job={title:d.get("title").trim(),company:d.get("company").trim(),location:d.get("location"),address:d.get("address").trim(),category:d.get("category"),level:d.get("level"),type:d.get("type"),qty:num("qty")||1,salaryMin:mn,salaryMax:mx,deadline:d.get("deadline"),hot:d.get("hot")==="on",desc:arr("desc"),req:arr("req"),ben:arr("ben")};
+  const id=ui.editId;
+  save(()=>{if(id){const o=DATA.jobs.find(j=>j.id===id);Object.assign(o,job)}else DATA.jobs.push(Object.assign({id:"j"+Date.now().toString(36),posted:new Date().toISOString().slice(0,10)},job))},id?"Đã lưu thay đổi.":"Đã đăng tin.");}
+const SKEL='<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>';
+function buildHtml(){const json=JSON.stringify(DATA).replace(/</g,"\\u003c");
+  return SKEL+'\n<title>VN Job Listing</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">\n<style id="css">'+document.getElementById("css").textContent+'</style>\n\n<div id="app"></div>\n\n<script type="application/json" id="data">\n'+json+'\n<\/script>\n\n<script id="main">'+document.getElementById("main").textContent+'<\/script>\n\n</body></html>';}
+async function save(mutate,okText){if(!artifactApi||ui.saving)return;const backup=JSON.stringify(DATA);mutate();ui.saving=true;ui.msg={text:"Đang lưu…"};render();
+  try{try{sessionStorage.setItem("vnjob-msg",okText)}catch(e){}
+    await artifactApi.publish(buildHtml());}
+  catch(err){DATA=JSON.parse(backup);Object.assign(S,DATA.settings);DATA.settings=S;ui.saving=false;try{sessionStorage.removeItem("vnjob-msg")}catch(e){}
+    const c=err&&err.code;
+    if(c==="conflict"){ui.msg={text:"Trang vừa được cập nhật ở nơi khác, đang tải lại bản mới.",err:true}}
+    else if(c==="not_writer"||c==="not_granted"||c==="consent_required"||c==="not_declared"){ui.canEdit=false;ui.msg={text:"Tài khoản này chỉ xem được trang, không lưu được thay đổi.",err:true}}
+    else if(c==="rate_limited"){ui.msg={text:"Lưu quá nhanh. Chờ khoảng một phút rồi bấm lưu lại.",err:true}}
+    else ui.msg={text:"Chưa lưu được ("+(c||"lỗi")+"). Thử lại sau ít phút.",err:true};
+    render();}}
+try{const m=sessionStorage.getItem("vnjob-msg");if(m){ui.msg={text:m};sessionStorage.removeItem("vnjob-msg");}}catch(e){}
+render();
+(async()=>{let u=null;try{const c=window.claude;if(c&&c.use){[artifactApi,u]=await Promise.all([c.use("artifact"),c.use("user")]);}}catch(e){}
+  let can=false;try{can=!!(artifactApi&&u&&await u.canEdit())}catch(e){}
+  ui.canEdit=can;if(route()[0]==="employer")render();})();
+setTimeout(()=>{if(ui.canEdit===null){ui.canEdit=false;if(route()[0]==="employer")render()}},11000);
+})();
+</script>
+</body>
+</html>
