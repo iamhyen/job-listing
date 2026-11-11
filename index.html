@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>VN Job Listing – Việc làm Hà Nội, Quảng Ninh, Hải Phòng</title>
-<meta name="description" content="Việc làm được cập nhật thường xuyên ở Hà Nội, Quảng Ninh, Hải Phòng. Xem JD và ứng tuyển trực tuyến.">
-<meta property="og:title" content="VN Job Listing">
+<title>JOB LISTING – Việc làm Hà Nội, Quảng Ninh, Hải Phòng</title>
+<meta name="description" content="Khám phá việc làm, mở ra cơ hội mới tại đây. Việc làm cập nhật thường xuyên ở Hà Nội, Quảng Ninh, Hải Phòng.">
+<meta property="og:title" content="JOB LISTING">
 <meta property="og:description" content="Việc làm được cập nhật thường xuyên ở Hà Nội, Quảng Ninh, Hải Phòng.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
@@ -189,7 +189,7 @@ function card(j){const d=daysLeft(j.deadline);return `<a class="card" href="#job
   <div class="pills"><span class="pill salary">${esc(salary(j))}</span><span class="pill">${esc([j.location].concat(j.alsoIn||[]).join(", "))}</span><span class="pill">${d===0?"Hết hạn hôm nay":"Còn "+d+" ngày"}</span>${j.sample?'<span class="pill">Tin mẫu</span>':""}</div></div></a>`}
 function nav(route){const l=(h,t,key)=>`<a href="#${h}" ${route===key?'aria-current="page"':""}>${t}</a>`;
   return `${S.sample?'<div class="sample">Dữ liệu mẫu: công ty, lương và liên hệ là ví dụ. Mức lương và mô tả đang là ví dụ, sẽ được cập nhật.</div>':""}
-  <header class="nav"><div class="wrap"><a class="brand" href="#home"><i>VN</i>VN Job Listing</a>
+  <header class="nav"><div class="wrap"><a class="brand" href="#home"><i>JL</i>JOB LISTING</a>
   <nav aria-label="Chính">${l("home","Trang chủ","home")}${l("jobs","Tìm việc","jobs")}${l("employer","Liên hệ đăng tin","employer")}</nav>
   <a class="btn warm" href="#employer">Đăng tin tuyển dụng</a></div></header>`}
 function searchBar(){return `<form class="search" id="searchForm" role="search">
@@ -200,7 +200,7 @@ function home(){
   const a=active();
   const hot=a.filter(j=>j.hot).concat(a.filter(j=>!j.hot));
   const cats=CATS.map(c=>[c,a.filter(j=>j.category===c).length]).filter(x=>x[1]>0);
-  return `<section class="hero"><div class="wrap"><h1>Tìm việc gần nhà, ứng tuyển trong một phút</h1>
+  return `<section class="hero"><div class="wrap"><h1>Khám phá việc làm, mở ra cơ hội mới tại đây</h1>
   <p>Việc làm được cập nhật thường xuyên ở Hà Nội, Quảng Ninh và Hải Phòng.</p>
   ${searchBar()}
   <div class="stats"><span><b>${a.length}</b>việc đang tuyển</span><span><b>${new Set(a.map(j=>j.location)).size}</b>tỉnh / thành</span><span><b>${a.reduce((s,j)=>s+(+j.qty||1),0)}</b>vị trí cần người</span></div></div></section>
@@ -286,7 +286,7 @@ function employer(){
   const msg=ui.msg?`<div class="alert ${ui.msg.err?"err":""}">${esc(ui.msg.text)}</div>`:"";
   if(ui.canEdit===null)return `<div class="wrap section"><h2>Nhà tuyển dụng</h2><p class="note">Đang kiểm tra quyền quản lý trang…</p></div>`;
   if(!ui.canEdit)return `<div class="wrap section" style="max-width:720px"><h2>Đăng tin tuyển dụng</h2>${msg}
-   <div class="panel"><p style="margin:0">Bạn muốn đăng tin trên VN Job Listing? Gửi thông tin vị trí cần tuyển cho chúng tôi, tin sẽ lên trang trong ngày.</p>
+   <div class="panel"><p style="margin:0">Bạn muốn đăng tin trên JOB LISTING? Gửi thông tin vị trí cần tuyển cho chúng tôi, tin sẽ lên trang trong ngày.</p>
    <p style="margin:0">Email: <b>${esc(S.email)}</b></p>
    <div><button class="btn primary" type="button" data-copy="${esc(S.email)}">Sao chép email</button></div></div></div>`;
   const editing=ui.editId?DATA.jobs.find(j=>j.id===ui.editId):null;
@@ -306,7 +306,7 @@ function employer(){
      <label class="fld check full"><input id="s-sample" name="sample" type="checkbox" ${S.sample?"checked":""}> Hiện dòng báo “dữ liệu mẫu”</label>
      <button class="btn primary full" type="submit" ${ui.saving?"disabled":""}>Lưu liên hệ</button></form></div>
    </aside></div></div>`}
-function footer(){return `<footer><div class="wrap"><span><b>VN Job Listing</b> · Việc làm được cập nhật thường xuyên ở HN, QN, HP</span><span>Liên hệ: ${esc(S.email)}</span></div></footer>`}
+function footer(){return `<footer><div class="wrap"><span><b>JOB LISTING</b> · Việc làm được cập nhật thường xuyên ở HN, QN, HP</span><span>Liên hệ: ${esc(S.email)}</span></div></footer>`}
 function route(){const h=location.hash.slice(1);if(h.startsWith("job-"))return["job",h.slice(4)];if(h==="jobs"||h==="employer")return[h];return["home"]}
 function render(){const [r,id]=route();const body=r==="jobs"?jobs():r==="job"?detail(id):r==="employer"?employer():home();
   app.innerHTML=nav(r==="job"?"jobs":r)+`<main class="view">${body}</main>`+footer();
@@ -354,7 +354,7 @@ function saveJob(f){const d=new FormData(f),num=k=>{const v=String(d.get(k)||"")
   save(()=>{if(id){const o=DATA.jobs.find(j=>j.id===id);Object.assign(o,job)}else DATA.jobs.push(Object.assign({id:"j"+Date.now().toString(36),posted:new Date().toISOString().slice(0,10)},job))},id?"Đã lưu thay đổi.":"Đã đăng tin.");}
 const SKEL='<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>';
 function buildHtml(){const json=JSON.stringify(DATA).replace(/</g,"\\u003c");
-  return SKEL+'\n<title>VN Job Listing</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">\n<style id="css">'+document.getElementById("css").textContent+'</style>\n\n<div id="app"></div>\n\n<script type="application/json" id="data">\n'+json+'\n<\/script>\n\n<script id="main">'+document.getElementById("main").textContent+'<\/script>\n\n</body></html>';}
+  return SKEL+'\n<title>JOB LISTING</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">\n<style id="css">'+document.getElementById("css").textContent+'</style>\n\n<div id="app"></div>\n\n<script type="application/json" id="data">\n'+json+'\n<\/script>\n\n<script id="main">'+document.getElementById("main").textContent+'<\/script>\n\n</body></html>';}
 async function save(mutate,okText){if(!artifactApi||ui.saving)return;const backup=JSON.stringify(DATA);mutate();ui.saving=true;ui.msg={text:"Đang lưu…"};render();
   try{try{sessionStorage.setItem("vnjob-msg",okText)}catch(e){}
     await artifactApi.publish(buildHtml());}
