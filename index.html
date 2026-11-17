@@ -248,6 +248,7 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
 </script>
 <script id="main">
 (function(){
+try{if(location.search)history.replaceState(null,"",location.pathname+location.hash)}catch(e){}
 const LOCS=["Hà Nội","Quảng Ninh","Hải Phòng","TP.HCM"];
 const CATS=["Sản xuất / Công nhân","Kho vận / Logistics","Kinh doanh / Sales","Marketing","Truyền thông / Media","Dịch vụ / Nhà hàng","Hành chính / Nhân sự","Kế toán / Tài chính"];
 const LEVELS=["Nhân viên","Trưởng nhóm","Quản lý"];
